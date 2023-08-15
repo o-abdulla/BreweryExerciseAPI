@@ -1,0 +1,11 @@
+﻿@model List<BreweryModel>
+
+@{
+    foreach(BreweryModel b in Model)
+    {
+        <h2>@b.name</h2>
+        <p>Address: @b.address_1</p>
+        <p>@b.city, @b.state</p>
+        <p>Phone: @b.phone</p>
+    }
+}
